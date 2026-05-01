@@ -513,6 +513,14 @@ PLATFORM_HINTS = {
         "image and is the WRONG path. Bare Unicode emoji in text is also not a substitute "
         "— when a sticker is the right response, use yb_send_sticker."
     ),
+    "opencode_desktop": (
+        "You are chatting via OpenCode Desktop — a coding-focused terminal interface "
+        "with full access to files, terminal, git, and LSP through the OpenCode IDE. "
+        "You are the conversational/assistant layer. Use markdown formatting — it renders "
+        "well in the terminal. Keep responses helpful but concise. For coding tasks, "
+        "suggest approaches while OpenCode handles implementation details. "
+        "The user can switch between you and OpenCode's built-in coding agent seamlessly."
+    ),
 }
 
 # ---------------------------------------------------------------------------

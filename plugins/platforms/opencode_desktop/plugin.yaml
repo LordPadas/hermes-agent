@@ -1,0 +1,12 @@
+name: opencode-desktop-platform
+kind: platform
+version: 1.0.0
+description: >
+  OpenCode Desktop platform adapter for Hermes Agent.
+  Runs a WebSocket server that OpenCode Desktop connects to,
+  enabling chat with Hermes directly from the OpenCode interface.
+  Uses aiohttp (already available in the gateway).
+author: Hermes Agent
+requires_env:
+  - OPENCODE_DESKTOP_PORT
+  - OPENCODE_DESKTOP_TOKEN
