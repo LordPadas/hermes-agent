@@ -143,6 +143,12 @@ When OpenCode Desktop is connected to Hermes Gateway via the `hermes-gateway.ts`
 /hermes:skills        # list available Hermes skills
 ```
 
+## Skills system
+
+Skills auto-load from `~/.hermes/skills/`. Each skill is a `SKILL.md` with YAML frontmatter (`name`, `description`). Bundled skills in `skills/` ship with the repo; optional skills in `optional-skills/`. Custom skills go directly in `~/.hermes/skills/<name>/`.
+
+Skill slash commands inject as **user message** (not system prompt) to preserve prompt caching.
+
 ## Profile test pattern
 ```python
 @pytest.fixture
